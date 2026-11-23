@@ -3,9 +3,6 @@ target = "index.html"
 dist = "dist"
 public_url = "/kartu-musik/"
 
-[watch]
-ignore = ["dist"]
-
 [serve]
 address = "127.0.0.1"
 port = 8080
