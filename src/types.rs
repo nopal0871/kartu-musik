@@ -6,6 +6,7 @@ pub enum Orientation {
     Landscape,
 }
 
+#[allow(dead_code)]
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub enum ExportResolution {
     FullHD, // 1080p
