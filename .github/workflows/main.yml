@@ -35,10 +35,12 @@ jobs:
           sudo mv trunk /usr/local/bin/
 
       - name: Build with Trunk (Release)
-        run: trunk build --release --public-url /${{ github.event.repository.name }}/
+        run: |
+          trunk build --release --public-url /${{ github.event.repository.name }}/
+          cp dist/index.html dist/404.html
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
