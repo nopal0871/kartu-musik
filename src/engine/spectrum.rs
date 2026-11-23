@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn get_mock_spectrum(time_sec: f64) -> Vec<f32> {
     (0..16)
         .map(|i| {
